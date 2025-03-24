@@ -1,0 +1,39 @@
+---
+title: "Types of Evidence Synthesis & Best Practices"
+author: Matthew Grainger
+email: matthew.grainger@nina.no
+format: revealjs
+editor: visual
+---
+
+## Systematic reviews vs. meta-analyses vs. rapid reviews vs. scoping reviews
+
+## Guidance & Resources
+
+# Defining research questions
+
+## Question frameworks
+
+[P]{style="color:red;"}[I]{style="color:green;"}[C]{style="color:blue;"}[O]{style="color:purple;"} - [Population]{style="color:red;"} [Intervention]{style="color:green;"} [Comparator]{style="color:blue;"} [Outcome]{style="color:purple;"}
+
+What is the effect of [neonicotinoid pesticides]{style="color:green;"} on [pollinator]{style="color:red;"} [performance?]{style="color:purple;"}
+
+[P]{style="color:red;"}[E]{style="color:green;"}[C]{style="color:blue;"}[O]{style="color:purple;"} - [Population]{style="color:red;"} [Exposure]{style="color:green;"} [Comparator]{style="color:blue;"} [Outcome]{style="color:purple;"}
+
+What is the effectiveness of [conversion to organic farming]{style="color:green;"} on [pollinator]{style="color:red;"} [performance?]{style="color:purple;"}
+
+[P]{style="color:red;"}[O]{style="color:purple;"} - [Population]{style="color:red;"} [Outcome(s)]{style="color:purple;"}
+
+What is the [prevalence (ppm) of neonicotinoid pesticides]{style="color:purple;"} in [fresh water?]{style="color:red;"}
+
+[P]{style="color:red;"}[I]{style="color:green;"}[T]{style="color:blue;"} - [Population]{style="color:red;"} [Index-test]{style="color:green;"} [Target-outcome]{style="color:blue;"}
+
+What is the sensitivity of [water tests]{style="color:green;"} for presence and [level of neonicotinoid pesticides]{style="color:blue;"} in [freshwater streams?]{style="color:red;"}
+
+## Your turn
+
+-   How does the size and density of kelp forest affect fisheries in the Pacific?
+
+-   Are reintroduction programs effective for increasing populations of African wild dogs in South Africa?
+
+-   What is the impact of flooding on abundance of trout in Chilean rivers?

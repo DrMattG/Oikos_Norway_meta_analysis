@@ -1,0 +1,8 @@
+---
+title: "Meta-Analysis: Effect Sizes, Models, and Heterogeneity"
+author: "Matthew Grainger"
+format: revealjs
+editor: visual
+---
+
+## 
