@@ -15,9 +15,9 @@ The workshop is designed for ecologists, environmental scientists, and conservat
 |09:15-09:45	  |Talk: The Landscape of Evidence Synthesis|[The Landscape of Evidence](https://github.com/DrMattG/Oikos_Norway_meta_analysis/blob/main/The_Landscape_of_Evidence_Synthesis.qmd)|
 |09:45-10:10	  |Interactive Group Activity: Types of Evidence Synthesis||
 |10:10-10:25	  |Break||
-|10:25-11:00	  |Short Talk: Introduction to Meta-Analysis|[Intro to Meta-analysis](https://github.com/DrMattG/Oikos_Norway_meta_analysis/blob/main/Introduction_to_Meta-Analysis.qmd)|
+|10:25-11:00	  |Talk: Introduction to Meta-Analysis|[Intro to Meta-analysis](https://github.com/DrMattG/Oikos_Norway_meta_analysis/blob/main/Introduction_to_Meta-Analysis.qmd)|
 |11:00-11:30	  |Hands-On Meta-Analysis Exercise (in R)|[Meta-Analysis R](https://github.com/DrMattG/Oikos_Norway_meta_analysis/blob/main/Meta_analysis.qmd)|
-|11:30-11:50	  |Scenario Game: You're the Decision-Maker|[You are the decision maker](https://github.com/DrMattG/Oikos_Norway_meta_analysis/blob/main/Youre_the_decision_maker.qmd)|
+|11:30-11:50	  |Scenarios: You're the Decision-Maker|[You are the decision maker](https://github.com/DrMattG/Oikos_Norway_meta_analysis/blob/main/Youre_the_decision_maker.qmd)|
 |11:50-12:00	  |Open Discussion / Q&A / wrap-up|[Wrap-up](https://github.com/DrMattG/Oikos_Norway_meta_analysis/blob/main/wrap_up.qmd)|
 
 

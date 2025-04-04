@@ -37,6 +37,7 @@ editor: visual
 -   Sub-group analysis
 -   Network meta-analysis
 -   Bayesian meta-analysis
+-   Decision models
 :::
 :::::
 
@@ -48,16 +49,16 @@ editor: visual
 ::: {.column width="50%"}
 (high heterogenity makes these unreliable)
 
-1)   Trim and Fill
-2)   Egger’s Regression
-3)   Fail-safe N
+1)  Trim and Fill
+2)  Egger’s Regression
+3)  Fail-safe N
 :::
 
 ::: {.column width="50%"}
 (low power makes these unreliable)
 
-4)   Vote Counting
-5)   Over-reliance on p-values
+4)  Vote Counting
+5)  Over-reliance on p-values
 :::
 :::::
 
@@ -68,11 +69,9 @@ editor: visual
     -   Funnel plots do not work when you have non-independent effect sizes (e.g. multiple effects from the same paper) or if you're running multi-level models.
 
     -   Small studies and large studies often have very different designs and procedures
-    
-  
-##
-  
-  ![](images/clipboard-2597424942.png)
+
+## 
+
+![](images/clipboard-2597424942.png)
 
 ## Questions?
-
