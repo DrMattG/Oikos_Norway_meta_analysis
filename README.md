@@ -18,7 +18,7 @@ The workshop is designed for ecologists, environmental scientists, and conservat
 |10:25-11:00	  |Short Talk: Introduction to Meta-Analysis|[Intro to Meta-analysis](https://github.com/DrMattG/Oikos_Norway_meta_analysis/blob/main/Introduction_to_Meta-Analysis.qmd)|
 |11:00-11:30	  |Hands-On Meta-Analysis Exercise (in R)|[Meta-Analysis R](https://github.com/DrMattG/Oikos_Norway_meta_analysis/blob/main/Meta_analysis.qmd)|
 |11:30-11:50	  |Scenario Game: You're the Decision-Maker|[You are the decision maker](https://github.com/DrMattG/Oikos_Norway_meta_analysis/blob/main/Youre_the_decision_maker.qmd)|
-|11:50-12:00	  |Open Discussion / Q&A / wrap-up||
+|11:50-12:00	  |Open Discussion / Q&A / wrap-up|[Wrap-up](https://github.com/DrMattG/Oikos_Norway_meta_analysis/blob/main/wrap_up.qmd)|
 
 
 ## Workshop Materials:
