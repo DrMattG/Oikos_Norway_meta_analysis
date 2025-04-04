@@ -9,46 +9,18 @@ The workshop is designed for ecologists, environmental scientists, and conservat
 
 ## Workshop Outline:
 
-09:00 - 09:15 | Introduction: The Role of Evidence Synthesis in Ecology
+|Time	          |Activity                                     | Qmd files       |   
+|---------------|---------------------------------------------|-----------------|
+|09:00-09:15	  |Welcome - "What is evidence?"||
+|09:15-09:35	  |Short Talk: The Landscape of Evidence Synthesis|The_Landscape_of_Evidence_Synthesis.qmd|
+|09:35-10:00	  |Interactive Group Activity: Types of Evidence Synthesis||
+|10:00-10:10	  |Break||
+|10:10-10:25	  |Short Talk: Introduction to Meta-Analysis|Introduction_to_Meta-Analysis.qmd|
+|10:25-11:10	  |Hands-On Meta-Analysis Exercise (in R)||
+|11:10-11:35	  |Scenario Game: You're the Decision-Maker||
+|11:35-11:55	  |Open Discussion / Q&A / Hot Tips from the Field||
+|11:55-12:00	  |Wrap-up & Feedback||
 
-- Overview of systematic reviews and meta-analyses
-- Why do we need rigorous evidence synthesis?
-- Common pitfalls and challenges
-
-09:15 - 09:45 | Types of Evidence Synthesis & Best Practices
-
-- Systematic reviews vs. meta-analyses vs. rapid reviews vs. scoping reviews
-- Guidance resources
-- Defining research questions using PICO
-
-09:45 - 10:15 | Data Collection: Study Screening & Data Extraction
-Setting inclusion/exclusion criteria
-
-- Inter-rater reliability and screening tools (e.g., R, Rayyan)
-- Extracting effect sizes and moderators
-
-
-10:15 - 10:30 | Coffee Break
-
-10:30 - 11:00 | Meta-Analysis: Effect Sizes, Models, and Heterogeneity
-
-- Choosing effect size metrics
-- Fixed vs. random effects models
-- Heterogeneity assessment (I², tau², Q-test)
-
-11:00 - 11:30 | Addressing Bias & Sensitivity Analyses
-
-- Small study bias ("publication bias")
-- Sensitivity analysis and robustness checks
-
-11:30 - 11:50 | Reporting & Reproducibility
-
-- PRISMA/ROSES flowcharts and reporting standards
-- Ensuring reproducibility (sharing data, R scripts, and protocols)
-- Emerging trends: Living meta-analyses, machine learning and AI
-
-
-11:50 - 12:00 | Closing Remarks & Q&A
 
 ## Workshop Materials:
 

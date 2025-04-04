@@ -12,6 +12,10 @@ editor: visual
 
 ## Systematic reviews vs. meta-analyses vs. rapid reviews vs. scoping reviews
 
+## Essential steps in evidence synthesis
+
+![](images/clipboard-3014003817.png)
+
 ## Guidance & Resources
 
 # Defining research questions
