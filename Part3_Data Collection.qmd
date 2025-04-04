@@ -2,7 +2,11 @@
 title: "Data Collection: Study Screening & Data Extraction"
 author: "Matthew Grainger"
 email: "matthew.grainger@nina.no"
-format: revealjs
+format:
+  revealjs:
+    slide-number: true
+    show-slide-number: all
+theme: solarized
 editor: visual
 ---
 

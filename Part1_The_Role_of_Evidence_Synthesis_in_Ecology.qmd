@@ -173,7 +173,7 @@ ggplot(power_data, aes(x = SampleSize, y = Power, color = EffectSize)) +
 
 ## The Solution
 
-> Evidence synthesis’ refers to the process of bringing together information from a range of sources and disciplines to inform debates and decisions on specific issues. Decision-making and public debate are best served if policymakers have access to the best current evidence on an issue. An accurate, concise and unbiased synthesis of the evidence is therefore one of the most valuable contributions the research community can offer policymakers (Royal Society)
+> Evidence synthesis refers to the process of bringing together information from a range of sources and disciplines to inform debates and decisions on specific issues. Decision-making and public debate are best served if policymakers have access to the best current evidence on an issue. An accurate, concise and unbiased synthesis of the evidence is therefore one of the most valuable contributions the research community can offer policymakers (Royal Society)
 
 ## Evidence pyramid
 
@@ -195,7 +195,16 @@ ggplot(power_data, aes(x = SampleSize, y = Power, color = EffectSize)) +
 
 ![](images/clipboard-3014003817.png)
 
+## Common pitfalls and challenges
+
+-   Evidence synthesis is hard!
+
+-   It is okay to not do a systematic review (you can do a "review systematically")
+
+-   Don't just follow another review - follow guidance (e.g. CEE guidelines)
+
 ## Recommended literature {.smaller}
+
 [Collaboration for Environmental Evidence, 2018. Guidelines and Standards for Evidence synthesis in Environmental Management. Version 5.0](https://environmentalevidence.org/information-for-authors/table-of-contents-page)
 
 [Cooke et al., 2017. How experimental biology and ecology can support evidence-based decision-making in conservation: avoiding pitfalls and enabling application, Cons Phy, 5(1)](https://doi.org/10.1093/conphys/cox043)

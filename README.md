@@ -43,7 +43,7 @@ Setting inclusion/exclusion criteria
 
 11:30 - 11:50 | Reporting & Reproducibility
 
-- PRISMA flowcharts and reporting standards
+- PRISMA/ROSES flowcharts and reporting standards
 - Ensuring reproducibility (sharing data, R scripts, and protocols)
 - Emerging trends: Living meta-analyses, machine learning and AI
 
