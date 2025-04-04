@@ -28,15 +28,14 @@ editor: visual
 
 -   Evidence synthesis is the process of gathering, combining, and interpreting research from multiple studies to draw broader conclusions.
 
-- In ecology, we are often tasked with making sense of diverse studies on similar topics, like the effects of land use on species. Evidence synthesis allows us to combine results and make decisions based on the bigger picture.
+-   In ecology, we are often tasked with making sense of diverse studies on similar topics, like the effects of land use on species. Evidence synthesis allows us to combine results and make decisions based on the bigger picture.
 
 ## Why cant we rely on single studies?
 
-::: {.fragment fragment-index=1}
-
+::: {.fragment fragment-index="1"}
 :::
 
-::: {.fragment fragment-index=1}
+::: {.fragment fragment-index="1"}
 -   Single studies can be misleading or misinterpreted.
 -   Single studies can be biased, poorly designed, or limited in scope.
 -   They may not represent the full range of conditions or species.
@@ -157,7 +156,6 @@ ggplot(power_data, aes(x = SampleSize, y = Power, color = EffectSize)) +
 
 ```
 
-
 ## Too many studies
 
 -   [\> 1.5 million papers published each year]{style="color:darkred;"}
@@ -187,77 +185,75 @@ p
 
 ```
 
-
-
 # Types of Evidence Synthesis
 
 ## Essential steps in evidence synthesis
+
 ![](images/clipboard-3014003817.png)
 
+# [The Review family]{style="color:darkred;"}
 
-#  [The Review family]{style="color:darkred;"}
- 
 ## Narrative Review
 
-- A summary of studies, but typically lacks formal methods for study selection or quality assessment.
+-   A summary of studies, but typically lacks formal methods for study selection or quality assessment.
 
-- Good for broad overviews but less reliable in terms of conclusions.
+-   Good for broad overviews but less reliable in terms of conclusions.
 
 ## Systematic Review
 
-- Uses strict, [predefined]{style=color"darkred"} methods to select studies and assess their quality.
+-   Uses strict, [predefined]{style="color\"darkred\""} methods to select studies and assess their quality.
 
-- A systematic review might ask, 'What is the impact of invasive species on native plant communities?' and follows a clear protocol to identify, evaluate, and synthesize the studies.
+-   A systematic review might ask, 'What is the impact of invasive species on native plant communities?' and follows a clear protocol to identify, evaluate, and synthesize the studies.
 
 ## Meta-Analysis
 
-- A subset of systematic reviews, but with a statistical approach to combine effect sizes from different studies.
+-   A subset of systematic reviews, but with a statistical approach to combine effect sizes from different studies.
 
-- Meta-analysis quantifies the strength of an effect, such as the average impact of a particular conservation practice on biodiversity, and tests if it's statistically significant.
+-   Meta-analysis quantifies the strength of an effect, such as the average impact of a particular conservation practice on biodiversity, and tests if it's statistically significant.
 
 [You can have a systematic review without a meta-analysis but not a meta-analysis without a systematic review]{style="color:darkred;"}
 
 ## Rapid Review
 
-- A streamlined review process used to synthesise evidence quickly, often for urgent policy or management decisions.
+-   A streamlined review process used to synthesise evidence quickly, often for urgent policy or management decisions.
 
-- Rapid reviews might be used in fast-moving situations, like evaluating the effectiveness of a new conservation policy in response to a crisis.
+-   Rapid reviews might be used in fast-moving situations, like evaluating the effectiveness of a new conservation policy in response to a crisis.
 
 [There is no accepted definition of a Rapid Review and we do not often know which components we should cut and then impacts of that]{style="color:darkred;"}
 
 ## Living Review
 
-- An ongoing review that is continuously updated as new studies are published.
+-   An ongoing review that is continuously updated as new studies are published.
 
-- Living reviews are useful in rapidly evolving fields, such as climate change, where new evidence is constantly emerging.
+-   Living reviews are useful in rapidly evolving fields, such as climate change, where new evidence is constantly emerging.
 
 ## Umbrella Review
-- A review of existing systematic reviews, providing a high-level overview of evidence across multiple topics.
 
-- Umbrella reviews can help us understand the broader context of a specific issue, like the overall effectiveness of different conservation strategies across various ecosystems.
+-   A review of existing systematic reviews, providing a high-level overview of evidence across multiple topics.
 
-- For example, an umbrella review could summarise the findings of multiple systematic reviews on the effects of habitat restoration on biodiversity.
+-   Umbrella reviews can help us understand the broader context of a specific issue, like the overall effectiveness of different conservation strategies across various ecosystems.
 
-#  [Mapping family]{style="color:darkred;"}
+-   For example, an umbrella review could summarise the findings of multiple systematic reviews on the effects of habitat restoration on biodiversity.
+
+# [Mapping family]{style="color:darkred;"}
 
 ## Systematic Map
 
-- A mapping process that categorises existing research but does not quantitatively synthesise results.
+-   A mapping process that categorises existing research but does not quantitatively synthesise results.
 
-- If we were interested in the global research on climate change effects on bird populations, a systematic map could help us identify research gaps and trends.
+-   If we were interested in the global research on climate change effects on bird populations, a systematic map could help us identify research gaps and trends.
 
 ## Scoping Review
 
-- A broader review that identifies the extent of research in a particular field or topic, often used to inform future research agendas.
+-   A broader review that identifies the extent of research in a particular field or topic, often used to inform future research agendas.
 
-- A scoping review could help us understand how much research exists on the impact of urbanization on amphibian populations.
+-   A scoping review could help us understand how much research exists on the impact of urbanization on amphibian populations.
 
 ## Evidence Gap Map (EGM)
 
-- A visual representation of research gaps in a specific area, showing where studies exist and where more research is needed.
+-   A visual representation of research gaps in a specific area, showing where studies exist and where more research is needed.
 
-- EGMs can help policymakers and researchers identify areas where evidence is lacking, such as the effects of habitat restoration on pollinator populations.
-
+-   EGMs can help policymakers and researchers identify areas where evidence is lacking, such as the effects of habitat restoration on pollinator populations.
 
 # Why Methodological Rigor Matters
 
@@ -277,16 +273,13 @@ p
 
 [![Performance of designs](images/clipboard-3628596984.png){width="411"}](https://doi.org/10.1111/1365-2664.14153)
 
+## Common pitfalls
 
-## Common pitfalls 
+-   Without proper methods to assess study quality and bias, we might miss crucial information that could change the overall interpretation of the evidence
 
-- Without proper methods to assess study quality and bias, we might miss crucial information that could change the overall interpretation of the evidence
+-   Publication bias can skew results, as studies with positive findings are more likely to be published.
 
-- Publication bias can skew results, as studies with positive findings are more likely to be published.
-
-- Small studies can lead to false positives, as they may not have enough power to detect true effects.
-
-
+-   Small studies can lead to false positives, as they may not have enough power to detect true effects.
 
 ## Recommended literature {.smaller}
 

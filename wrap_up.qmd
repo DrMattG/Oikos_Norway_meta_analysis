@@ -1,0 +1,78 @@
+---
+title: "Wrap-up"
+author: Matthew Grainger
+email: matthew.grainger@nina.no
+format:
+  revealjs:
+    slide-number: true
+    show-slide-number: all
+theme: sky
+editor: visual
+---
+
+## What I haven't covered...
+
+-   Reporting guidelines versus conduct guidelines (my pet peeve)
+
+## 
+
+![](images/clipboard-2399020059.png)
+
+## What I haven't covered...
+
+::::: columns
+::: {.column width="50%"}
+-   Question setting
+-   Search strategy (more than 1 platform!!!)
+-   Screening
+-   Data extraction
+-   Risk of bias assessment / Critical appraisal
+-   Narrative synthesis
+:::
+
+::: {.column width="50%"}
+-   Sensitivity analysis (Leave-one-out, etc.)
+-   Assessing publication bias
+-   Meta-regression
+-   Sub-group analysis
+-   Network meta-analysis
+-   Bayesian meta-analysis
+:::
+:::::
+
+## "zombie" 🧟️ ideas
+
+-   Ideas that are dead but refuse to die
+
+::::: columns
+::: {.column width="50%"}
+(high heterogenity makes these unreliable)
+
+1)   Trim and Fill
+2)   Egger’s Regression
+3)   Fail-safe N
+:::
+
+::: {.column width="50%"}
+(low power makes these unreliable)
+
+4)   Vote Counting
+5)   Over-reliance on p-values
+:::
+:::::
+
+## More Zombies 🧟️
+
+-   Funnel plots
+
+    -   Funnel plots do not work when you have non-independent effect sizes (e.g. multiple effects from the same paper) or if you're running multi-level models.
+
+    -   Small studies and large studies often have very different designs and procedures
+    
+  
+##
+  
+  ![](images/clipboard-2597424942.png)
+
+## Questions?
+
