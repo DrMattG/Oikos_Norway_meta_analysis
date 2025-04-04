@@ -12,10 +12,10 @@ The workshop is designed for ecologists, environmental scientists, and conservat
 |Time	          |Activity                                     | Qmd files       |   
 |---------------|---------------------------------------------|-----------------|
 |09:00-09:15	  |Welcome - "What is evidence?"||
-|09:15-09:35	  |Short Talk: The Landscape of Evidence Synthesis|The_Landscape_of_Evidence_Synthesis.qmd|
+|09:15-09:35	  |Short Talk: The Landscape of Evidence Synthesis|https://github.com/DrMattG/Oikos_Norway_meta_analysis/blob/main/The_Landscape_of_Evidence_Synthesis.qmd|
 |09:35-10:00	  |Interactive Group Activity: Types of Evidence Synthesis||
 |10:00-10:10	  |Break||
-|10:10-10:25	  |Short Talk: Introduction to Meta-Analysis|Introduction_to_Meta-Analysis.qmd|
+|10:10-10:25	  |Short Talk: Introduction to Meta-Analysis|https://github.com/DrMattG/Oikos_Norway_meta_analysis/blob/main/Introduction_to_Meta-Analysis.qmd|
 |10:25-11:10	  |Hands-On Meta-Analysis Exercise (in R)||
 |11:10-11:35	  |Scenario Game: You're the Decision-Maker||
 |11:35-11:55	  |Open Discussion / Q&A / Hot Tips from the Field||
