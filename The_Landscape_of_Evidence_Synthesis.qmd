@@ -24,6 +24,14 @@ editor: visual
 
 -   The Scoping/mapping reviews and EGMs Reviews Methodology Group - Campbell
 
+## Miro board
+
+
+```{r}
+library(qrcode)
+plot(qr_code("https://miro.com/welcomeonboard/ZU9OeVMyb1UzVnZIWDJXYWpkbmtjUUgwTnpEQmpkRHlYdUxxY3JEVWtqLzUrV3hmQ1lVZUxXZTdsZzZIQnYzT0hIdllFSWRrU1A2TG5WbXFxR0dSbUtYdmR4ZzFqckJMRVZzWjRYT1MyeUZnOEtXaFpuMC96aDhpTkVwTmhZbDdQdGo1ZEV3bUdPQWRZUHQzSGl6V2NBPT0hdjE=?share_link_id=727661350502"))
+```
+
 ## What is Evidence Synthesis?
 
 -   Evidence synthesis is the process of gathering, combining, and interpreting research from multiple studies to draw broader conclusions.
