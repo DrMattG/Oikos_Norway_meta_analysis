@@ -12,13 +12,13 @@ The workshop is designed for ecologists, environmental scientists, and conservat
 |Time	          |Activity                                     | Link to files       |   
 |---------------|---------------------------------------------|-----------------|
 |09:00-09:15	  |Welcome - "What is evidence?"||
-|09:15-09:45	  |Talk: The Landscape of Evidence Synthesis|[The Landscape of Evidence](https://github.com/DrMattG/Oikos_Norway_meta_analysis/blob/main/The_Landscape_of_Evidence_Synthesis.html)|
+|09:15-09:45	  |Talk: The Landscape of Evidence Synthesis|[The Landscape of Evidence](https://drmattg.github.io/Oikos_Norway_meta_analysis/The_Landscape_of_Evidence_Synthesis.html)|
 |09:45-10:10	  |Interactive Group Activity: Types of Evidence Synthesis||
 |10:10-10:25	  |Break||
-|10:25-11:00	  |Talk: Introduction to Meta-Analysis|[Intro to Meta-analysis](https://github.com/DrMattG/Oikos_Norway_meta_analysis/blob/main/Introduction_to_Meta-Analysis.html)|
-|11:00-11:30	  |Hands-On Meta-Analysis Exercise (in R)|[Meta-Analysis R](https://github.com/DrMattG/Oikos_Norway_meta_analysis/blob/main/Meta_analysis.html)|
-|11:30-11:50	  |Scenarios: You're the Decision-Maker|[You are the decision maker](https://github.com/DrMattG/Oikos_Norway_meta_analysis/blob/main/Youre_the_decision_maker.html)|
-|11:50-12:00	  |Open Discussion / Q&A / wrap-up|[Wrap-up](https://github.com/DrMattG/Oikos_Norway_meta_analysis/blob/main/wrap_up.html)|
+|10:25-11:00	  |Talk: Introduction to Meta-Analysis|[Intro to Meta-analysis](https://drmattg.github.io/Oikos_Norway_meta_analysis/Introduction_to_Meta-Analysis.html)|
+|11:00-11:30	  |Hands-On Meta-Analysis Exercise (in R)|[Meta-Analysis R](https://drmattg.github.io/Oikos_Norway_meta_analysis/Meta_analysis.html)|
+|11:30-11:50	  |Scenarios: You're the Decision-Maker|[You are the decision maker](https://drmattg.github.io/Oikos_Norway_meta_analysis/Youre_the_decision_maker.html)|
+|11:50-12:00	  |Open Discussion / Q&A / wrap-up|[Wrap-up](https://drmattg.github.io/Oikos_Norway_meta_analysis/wrap_up.html)|
 
 
 ## Workshop Materials:
