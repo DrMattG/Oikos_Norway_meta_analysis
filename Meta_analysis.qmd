@@ -20,7 +20,7 @@ Example Code:
 We have data from six fictional studies that examined species abundance before and after restoration efforts. The dataset includes: - Sample sizes before and after restoration (`n1` and `n2`). - Mean species abundance before and after (`m1` and `m2`). - Standard deviations of abundance before and after (`sd1` and `sd2`).
 
 | Study | Sample Size (Before) | Sample Size (After) | Mean Abundance (Before) | Mean Abundance (After) | SD (Before) | SD (After) |
-|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+|----|----|----|----|----|----|----|
 | Smith_2015 | 30 | 28 | 5.2 | 3.9 | 1.1 | 0.9 |
 | Johnson_2017 | 50 | 48 | 6.1 | 5.4 | 1.3 | 1.1 |
 | Lee_2018 | 45 | 44 | 5.9 | 5.3 | 1.0 | 0.8 |

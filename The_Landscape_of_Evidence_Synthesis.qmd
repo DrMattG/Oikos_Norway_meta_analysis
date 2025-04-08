@@ -26,7 +26,6 @@ editor: visual
 
 ## Miro board
 
-
 ```{r}
 library(qrcode)
 plot(qr_code("https://miro.com/welcomeonboard/ZU9OeVMyb1UzVnZIWDJXYWpkbmtjUUgwTnpEQmpkRHlYdUxxY3JEVWtqLzUrV3hmQ1lVZUxXZTdsZzZIQnYzT0hIdllFSWRrU1A2TG5WbXFxR0dSbUtYdmR4ZzFqckJMRVZzWjRYT1MyeUZnOEtXaFpuMC96aDhpTkVwTmhZbDdQdGo1ZEV3bUdPQWRZUHQzSGl6V2NBPT0hdjE=?share_link_id=727661350502"))
@@ -38,7 +37,7 @@ plot(qr_code("https://miro.com/welcomeonboard/ZU9OeVMyb1UzVnZIWDJXYWpkbmtjUUgwTn
 
 -   In ecology, we are often tasked with making sense of diverse studies on similar topics, like the effects of land use on species. Evidence synthesis allows us to combine results and make decisions based on the bigger picture.
 
-## Why cant we rely on single studies?
+## Why cant we rely on single studies? (go to the miro board)
 
 ::: {.fragment fragment-index="1"}
 :::
@@ -195,6 +194,8 @@ p
 
 # Types of Evidence Synthesis
 
+
+
 ## Essential steps in evidence synthesis
 
 ![](images/clipboard-3014003817.png)
@@ -233,7 +234,7 @@ p
 
 -   An ongoing review that is continuously updated as new studies are published.
 
--   Living reviews are useful in rapidly evolving fields, such as climate change, where new evidence is constantly emerging.
+-   Living reviews are useful in rapidly evolving field where new evidence is constantly emerging.
 
 ## Umbrella Review
 

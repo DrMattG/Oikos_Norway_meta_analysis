@@ -7,13 +7,13 @@ author: "Matthew Grainger"
 
 In small groups, read your assigned scenario. As a group, decide:
 
-- What does the evidence say?
-- How reliable is the evidence?
-- Would you recommend action now, or wait for more data?
-- How would you handle uncertainty?
-- What advice would you give to stakeholders or policymakers?
+-   What does the evidence say?
+-   How reliable is the evidence?
+-   Would you recommend action now, or wait for more data?
+-   How would you handle uncertainty?
+-   What advice would you give to stakeholders or policymakers?
 
----
+------------------------------------------------------------------------
 
 ### 🔍 Scenario 1: Beavers for Biodiversity?
 
@@ -21,25 +21,25 @@ You are advising a national park agency considering reintroducing **beavers** to
 
 A recent systematic review includes 12 studies:
 
-- 7 found strong positive effects on wetland biodiversity  
-- 3 found mixed effects (some species increased, others decreased)  
-- 2 found negative effects (e.g., flooding nearby farmland)
+-   7 found strong positive effects on wetland biodiversity\
+-   3 found mixed effects (some species increased, others decreased)\
+-   2 found negative effects (e.g., flooding nearby farmland)
 
 The meta-analysis shows:
 
-- **LnRR = 0.30** (95% CI: 0.10 to 0.50)  
-- **I² = 85%** (high heterogeneity)  
-- Studies vary across Europe and North America
+-   **LnRR = 0.30** (95% CI: 0.10 to 0.50)\
+-   **I² = 85%** (high heterogeneity)\
+-   Studies vary across Europe and North America
 
 **Constraints:**
 
-- Public pressure to act fast  
-- Budget is limited  
-- Concern from local farmers about flooding risks
+-   Public pressure to act fast\
+-   Budget is limited\
+-   Concern from local farmers about flooding risks
 
 What do you advise?
 
----
+------------------------------------------------------------------------
 
 ### 🔍 Scenario 2: Should We Ban Neonics?
 
@@ -47,20 +47,20 @@ You are part of a task force evaluating whether to **ban neonicotinoid pesticide
 
 A meta-analysis of 18 field and lab studies found:
 
-- **LnRR = -0.45** (95% CI: -0.60 to -0.30)  
-- **I² = 70%** (moderate heterogeneity)  
-- Larger negative effects in lab than in field  
-- Some uncertainty in exposure levels in real landscapes
+-   **LnRR = -0.45** (95% CI: -0.60 to -0.30)\
+-   **I² = 70%** (moderate heterogeneity)\
+-   Larger negative effects in lab than in field\
+-   Some uncertainty in exposure levels in real landscapes
 
 **Constraints:**
 
-- Farmers warn crop yields may suffer without neonics  
-- EU has already banned them—pressure to follow suit  
-- Pollinator populations declining nationally
+-   Farmers warn crop yields may suffer without neonics\
+-   EU has already banned them—pressure to follow suit\
+-   Pollinator populations declining nationally
 
 Would you recommend a ban? Would you target specific crops or times of year?
 
----
+------------------------------------------------------------------------
 
 ### 🔍 Scenario 3: Fire for Invasive Plant Control
 
@@ -68,24 +68,25 @@ You're advising a regional conservation agency about using **prescribed burning*
 
 A recent meta-analysis (k = 15) found:
 
-- **LnRR = -0.15** (95% CI: -0.35 to 0.05) — not statistically significant  
-- **I² = 92%** (very high heterogeneity)  
-- Positive effects in arid zones, negative or neutral in wetter regions  
-- Quality scores varied widely across studies
+-   **LnRR = -0.15** (95% CI: -0.35 to 0.05) — not statistically significant\
+-   **I² = 92%** (very high heterogeneity)\
+-   Positive effects in arid zones, negative or neutral in wetter regions\
+-   Quality scores varied widely across studies
 
 **Constraints:**
 
-- Burning has cultural support from local Indigenous groups  
-- Public concerned about air quality and fire risk  
-- Invasives are spreading rapidly in some areas
+-   Burning has cultural support from local Indigenous groups\
+-   Public concerned about air quality and fire risk\
+-   Invasives are spreading rapidly in some areas
 
 Do you support implementing prescribed burns? Everywhere or only in certain ecosystems?
 
----
+------------------------------------------------------------------------
+
 ### 🔍 Bonus Scenario: Conservation success
 
 You are a team assessing if your country should invest in conservation actions
 
-You see this [paper](https://eprints.whiterose.ac.uk/id/eprint/216053/1/Langhammer_et_al._2024_The_Positive_Impact_of_Conservation_Action_Science_Accepted_Version.pdf) 
+You see this [paper](https://eprints.whiterose.ac.uk/id/eprint/216053/1/Langhammer_et_al._2024_The_Positive_Impact_of_Conservation_Action_Science_Accepted_Version.pdf)
 
 Given the results of the paper would you recommend investing in conservation actions?
