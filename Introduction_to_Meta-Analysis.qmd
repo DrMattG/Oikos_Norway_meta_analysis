@@ -271,7 +271,7 @@ This suggests there's no consistent directional effect, but the high heterogenei
 
 `In this meta-analysis, we found high heterogeneity (I² = 86%) among studies. This suggests that true effect sizes vary meaningfully across ecological contexts—perhaps due to different species, ecosystems, or study designs.The estimated average effect was small and not statistically significant, but given the variation across studies, this average may not be meaningful on its own.`
 
-# 🌳 From Forest Plots to Orchard Plots 🍊: Visualizing Meta-Analysis Results
+# 🌳 From Forest Plots to Orchard Plots 🍊: Visualising Meta-Analysis Results
 
 ## 🌲 Forest Plots: The Classic View
 
@@ -355,7 +355,7 @@ rma(yi, sei^2, data = study)
 
 -   But must ensure effect direction is interpretable and consistent
 
-## Standardizing Predictors or Outcomes
+## Standardising Predictors or Outcomes
 
 -   If studies use different measurement scales:
 
@@ -365,9 +365,9 @@ rma(yi, sei^2, data = study)
 
     -   Note: This can reduce heterogeneity and improve comparability
 
-## Standardizing Regression Coefficients ($\beta$)
+## Standardising Regression Coefficients ($\beta$)
 
--   Standardization makes coefficients comparable across studies
+-   Standardisation makes coefficients comparable across studies
 -   Formula (for a simple linear regression):
 
 $$
@@ -417,7 +417,7 @@ If variances (SE/CI) are available for raw $\beta$, you can also transform the S
 
 -   But in multilevel models, effects are nested (e.g., multiple per study)
 
--   This violates the assumption &rarr; misleading asymmetry or overdispersion
+-   This violates the assumption ??? misleading asymmetry or overdispersion
 
 ## 
 
