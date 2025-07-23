@@ -40,7 +40,7 @@ editor: visual
 
 ## Effect size
 
--   **Effect size** ‚Äì *"A standardized way to compare results (e.g., log response ratio)."*
+-   **Effect size** ‚Äì *"A standardised way to compare results (e.g., log response ratio)."*
 
 [Effect sizes](https://matthewbjane.quarto.pub/Guide-to-Effect-Sizes-and-Confidence-Intervals.pdf "Detailed overview of different effect sizes") are key to synthesising study results in meta-analysis, as they provide a standardised way of comparing findings across studies. Common effect sizes include the standardised mean difference (Hedges' g in ecology), correlation coefficient, and log-transformed response ratio (lnRR).
 
@@ -120,7 +120,7 @@ $$v_i = \frac{SD_1^2}{n_1 \cdot \text{Mean}_1^2} + \frac{SD_2^2}{n_2 \cdot \text
 ## 
 
 | Study                      | LnRR  | Variance (vi) | Weight in Meta-Analysis |     |
-|----------------------------|-------|---------------|-------------------------|-----|
+|---------------|---------------|---------------|---------------|---------------|
 | Study A (Large n, Low SD)  | -0.20 | 0.01          | High ‚úÖ                  |     |
 | Study B (Small n, High SD) | -0.20 | 0.10          | Low ‚ùå                   |     |
 
@@ -332,10 +332,140 @@ orchaRd::orchard_plot(english_MA, mod = "1", group = "StudyNo", xlab = "Standard
 
 ```
 
+## Regression Coefficients as Effect Sizes
+
+-   Sometimes studies report **regression coefficients** instead of group comparisons.
+-   These can be used directly as effect sizes if:
+    -   The predictor is consistent across studies (e.g., standardised)
+    -   The outcome is continuous
+-   Often extracted as **raw slopes**, **standardised** $\beta$, or **log-odds**
+
+## Extracting Regression Coefficients
+
+```{r}
+#| echo: true
+# Example: effect of temperature on bird abundance 
+
+study <- data.frame(study_id = 1:4, yi = c(0.12, 0.20, 0.05, 0.18), #regression slopes 
+                     sei = c(0.03, 0.04, 0.02, 0.05) )
+
+rma(yi, sei^2, data = study)
+
+```
+
+-   But must ensure effect direction is interpretable and consistent
+
+## Standardizing Predictors or Outcomes
+
+-   If studies use different measurement scales:
+
+    -   **Convert to standardised** $\beta$ if possible
+
+    -   Or standardise both predictor and outcome before meta-analysis
+
+    -   Note: This can reduce heterogeneity and improve comparability
+
+## Standardizing Regression Coefficients ($\beta$)
+
+-   Standardization makes coefficients comparable across studies
+-   Formula (for a simple linear regression):
+
+$$
+\beta_{\text{standardised}} = \beta \cdot \frac{\text{SD}_X}{\text{SD}_Y}
+$$
+
+Where:
+
+-   ($\beta$): unstandardised slope (from paper)
+
+-   ($\text{SD}\_X$): SD of predictor (e.g. temperature)
+
+-   ($\text{SD}\_Y$): SD of outcome (e.g. abundance)
+
+## Example: Temperature Effect on Insect Abundance
+
+Study reports: $\beta$ = 2.5 (per $^\circ$C), temp SD = 5, abundance SD = 20
+
+```{r}
+#| echo: true
+beta_raw <- 2.5 
+sd_temp <- 5 
+sd_abund <- 20
+(beta_std <- beta_raw * (sd_temp / sd_abund) )
+
+#"A one SD increase in temperature is associated with a 0.625 SD increase in abundance."
+
+studies <- data.frame( beta = c(2.5, 1.2, 3.0, 0.8), sd_temp = c(5, 4, 6, 3), sd_abund = c(20, 10, 15, 8) )
+studies$beta_std <- with(studies, beta * (sd_temp / sd_abund)) 
+```
+
+You can now use beta_std as your yi values in rma() or rma.mv().
+
+## 
+
+::: callout-note
+Use SDs from within each study, not pooled
+:::
+
+If variances (SE/CI) are available for raw $\beta$, you can also transform the SEs: $$SE std = SE raw * \frac{\text{SD}_X}{\text{SD}_Y}$$
+
+-   Check study assumptions: linearity, normality, scale units
+
+## Funnel Plots & Multi-Level Meta-Analysis
+
+-   Traditional **funnel plots** assume **independent effect sizes**
+
+-   But in multilevel models, effects are nested (e.g., multiple per study)
+
+-   This violates the assumption &rarr; misleading asymmetry or overdispersion
+
+## 
+
+```{r}
+## A broken funnel
+
+data(dat.bangertdrowns2004) 
+dat <- dat.bangertdrowns2004  
+res_ml <- rma.mv(yi, vi, random = ~ 1 | author, data = dat)
+
+funnel(res_ml)  # Does not account for study-level clustering 
+```
+
+-   Visual inspection is unreliable
+
+-   Needs a method that accounts for dependency
+
+## Nakagawa et al.'s Solution (2022)
+
+-   Propose a **regression-based test** using residuals from multilevel model
+
+-   Regress **absolute residuals** (or squared residuals) on precision
+
+```{r}
+#| echo: true
+res <- rma.mv(yi, vi, random = ~ 1 | author, data = dat) 
+dat$resid <- resid(res) 
+dat$precision <- 1 / sqrt(dat$vi)  
+summary(lm(abs(resid) ~ precision, data = dat))
+
+```
+
+-   A significant slope indicates funnel asymmetry (small-study effects)
+
+-   Avoids misleading inferences from clustered data
+
+## Advantages of Residual Regression
+
+-   Compatible with multi-level models
+
+-   Avoids false positives in funnel asymmetry
+
+-   Reproducible and testable in `R`
+
 ## Recommended literature {.smaller}
 
 Sarkis-Onofre, R., Catal·-LÛpez, F., Aromataris, E. et al. How to properly use the PRISMA Statement. Syst Rev 10, 117 (2021). https://doi.org/10.1186/s13643-021-01671-z
 
 Nakagawa, S., Noble, D. W. A., Senior, A. M., & Lagisz, M. (2017). Meta-evaluation of meta-analysis: ten appraisal questions for biologists. BMC Biology, 15(1), 18. https://doi.org/10.1186/s12915-017-0357-7Harrer, M., Cuijpers, P., Furukawa, T. A., & Ebert, D. D. (2021). Doing Meta-Analysis With R: A Hands-On Guide (1st ed.). Chapman & Hall/CRC Press. https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/Nakagawa, S., Lagisz, M., O'Dea, R. E., Pottier, P., Rutkowska, J., Senior, A. M., Yang, Y., & Noble, D. W. A. (2023). orchaRd 2.0: An R package for visualising meta-analyses with orchard plots. Methods in Ecology and Evolution, 14(8), 2003-2010. https://doi.org/10.1111/2041-210x.14152
 
-Coe, R. (2002). It's the Effect Size - Stupid. Paper presented at the British Educational Research Association annual conference, Exeter, 12≠14 September, 2002 https://f.hubspotusercontent30.net/hubfs/5191137/attachments/ebe/ESguide.pdf
+Coe, R. (2002). It's the Effect Size - Stupid. Paper presented at the British Educational Research Association annual conference, Exeter, 12-14 September, 2002 https://f.hubspotusercontent30.net/hubfs/5191137/attachments/ebe/ESguide.pdf

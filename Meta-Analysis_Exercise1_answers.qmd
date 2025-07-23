@@ -1,0 +1,134 @@
+---
+title: "Answers: meta-analysis of grazing exclusion"
+format: html
+editor: visual
+---
+
+# Load packages
+
+```{r}
+#| echo: true
+#| message: false
+#| warning: false
+library(metafor)
+library(tidyverse)
+```
+
+*Study 1*: Temperate Grassland (USA)
+
+In Minnesota, plant species richness averaged 14.2 (SD = 2.1) in grazed plots (n = 10) and 17.8 (SD = 2.4) in exclosures (n = 10).
+
+```{r}
+dat1 <- escalc(measure = "SMD",
+               m1i = 17.8, sd1i = 2.4, n1i = 10,    # Exclosure
+               m2i = 14.2, sd2i = 2.1, n2i = 10)    # Grazed
+```
+
+*Study 2*: Mediterranean Pasture
+
+In Spain, grazed areas (n = 15) had a mean richness of 12.1 (SD = 2.5), while exclosure plots had 14.7 species (SD = 2.2; n = 15).
+
+```{r}
+dat2 <- escalc(measure = "SMD",
+               m1i = 14.7, sd1i = 2.2, n1i = 15,
+               m2i = 12.1, sd2i = 2.5, n2i = 15)
+```
+
+*Study 3*: Alpine Meadow (Switzerland)
+
+Richness in grazed plots was 13.8 (95% CI: 12.6–15.0; n = 12), compared to 16.3 (SD = 2.1; n = 12) in exclosures.
+
+**Hint: To convert CI to SD use:**
+
+```{r}
+#| eval: false # you need to change this when you do the exercise to TRUE
+# CI to SD: SD ≈ (upper - lower) / (2 * t)
+ci_upper <- #
+ci_lower <- #
+t_crit <- qt(0.975, df = 11)# 1 less than n
+
+sd <- (ci_upper - ci_lower) / (2 * t_crit)
+
+```
+
+```{r}
+ci_upper <- 15.0
+ci_lower <- 12.6
+n <- 12
+t_crit <- qt(0.975, df = n - 1)
+sd_grazed <- (ci_upper - ci_lower) / (2 * t_crit)
+
+dat3 <- escalc(measure = "SMD",
+               m1i = 16.3, sd1i = 2.1, n1i = 12,   # Exclosure
+               m2i = 13.8, sd2i = sd_grazed, n2i = 12)
+```
+
+*Study 4*: Semi-arid Shrubland
+
+Exclosure plots (n = 8) had 11.2 species on average (SD = 1.9). Grazed plots (n = 8) had 9.5 (SD = 2.0).
+
+```{r}
+dat4 <- escalc(measure = "SMD",
+               m1i = 11.2, sd1i = 1.9, n1i = 8,
+               m2i = 9.5,  sd2i = 2.0, n2i = 8)
+```
+
+*Study 5*: African Savanna
+
+Grazed plots (mean = 10.5, SE = 0.6, n = 10); Exclosures (mean = 13.2, SE = 0.5, n = 10)
+
+**Hint: Convert SE to SD: SD = SE \* sqrt(n)**
+
+```{r}
+sd_grazed <- 0.6 * sqrt(10)
+sd_excl <- 0.5 * sqrt(10)
+
+dat5 <- escalc(measure = "SMD",
+               m1i = 13.2, sd1i = sd_excl, n1i = 10,
+               m2i = 10.5, sd2i = sd_grazed, n2i = 10)
+```
+
+*Study 6*: Boreal Forest Edge
+
+Exclosures: mean = 16.4, SD = 2.8, n = 9. Grazed: mean = 14.3, SD = 2.1. Sample sise for grazed plots not given, but design was fully balanced.
+
+```{r}
+dat6 <- escalc(measure = "SMD",
+               m1i = 16.4, sd1i = 2.8, n1i = 9,
+               m2i = 14.3, sd2i = 2.1, n2i = 9)
+```
+
+*Study 7*: Tropical Highlands
+
+Species richness in grazed plots was 20.1 (SD = 2.5), while in exclosures it rose to 22.9 (SD = 3.1), with 11 plots in each treatment.
+
+```{r}
+dat7 <- escalc(measure = "SMD",
+               m1i = 22.9, sd1i = 3.1, n1i = 11,
+               m2i = 20.1, sd2i = 2.5, n2i = 11)
+```
+
+## Build a Data Table
+
+```{r}
+
+all_es <- bind_rows(dat1, dat2, dat3, dat4, dat5, dat6, dat7, .id="study_id")
+
+```
+
+## Meta-Analysis & Forest Plot
+
+```{r}
+#| echo: true
+#| eval: true # you need to change this when you do the exercise to true
+
+res <- rma.mv(yi, vi,random = ~ 1 | study_id,  data = all_es)
+
+summary(res)
+
+
+```
+
+```{r}
+forest(res, xlab = "Hedges' g (Effect of Exclusion on Richness)")
+```
