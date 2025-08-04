@@ -120,7 +120,7 @@ $$v_i = \frac{SD_1^2}{n_1 \cdot \text{Mean}_1^2} + \frac{SD_2^2}{n_2 \cdot \text
 ## 
 
 | Study                      | LnRR  | Variance (vi) | Weight in Meta-Analysis |     |
-|---------------|---------------|---------------|---------------|---------------|
+|-------------------|-------------|-------------|-----------------|-------------|
 | Study A (Large n, Low SD)  | -0.20 | 0.01          | High ✅                  |     |
 | Study B (Small n, High SD) | -0.20 | 0.10          | Low ❌                   |     |
 
@@ -353,6 +353,8 @@ rma(yi, sei^2, data = study)
 
 ```
 
+## 
+
 -   But must ensure effect direction is interpretable and consistent
 
 ## Standardising Predictors or Outcomes
@@ -373,6 +375,8 @@ rma(yi, sei^2, data = study)
 $$
 \beta_{\text{standardised}} = \beta \cdot \frac{\text{SD}_X}{\text{SD}_Y}
 $$
+
+## 
 
 Where:
 
@@ -417,7 +421,7 @@ If variances (SE/CI) are available for raw $\beta$, you can also transform the S
 
 -   But in multilevel models, effects are nested (e.g., multiple per study)
 
--   This violates the assumption ??? misleading asymmetry or overdispersion
+-   This violates the assumption - misleading asymmetry or overdispersion
 
 ## 
 

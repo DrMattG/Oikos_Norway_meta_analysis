@@ -1,5 +1,5 @@
 ---
-title: "Meta-Analysis Exercise: Standardizing Regression Coefficients"
+title: "Meta-Analysis Exercise: Standardising Regression Coefficients"
 format: html
 editor: visual
 ---
@@ -19,7 +19,6 @@ You’ll extract and **standardise the regression coefficients** so they are com
 library(dplyr)
 library(metafor)
 ```
-
 
 ## Formula Reminder
 
@@ -54,6 +53,7 @@ The slope of the regression was 3.4 individuals per °C (SE = 0.9). SD of temp =
 Insects were more sensitive in colder climates: β = 1.7 (SE = 0.5), with SD of temp = 3.0 and SD of abundance = 10.2.
 
 ## Combine Your Results
+
 ```{r}
 #| echo: true
 #| message: false
@@ -89,8 +89,8 @@ forest(res, slab = dat$study,
 
 ## Interpretation
 
-- You are now meta-analysing standardised slopes
+-   You are now meta-analysing standardised slopes
 
-- Unitless: interpretable as "effect per SD increase in temperature"
+-   Unitless: interpretable as "effect per SD increase in temperature"
 
-- Useful when raw units differ across studies
+-   Useful when raw units differ across studies

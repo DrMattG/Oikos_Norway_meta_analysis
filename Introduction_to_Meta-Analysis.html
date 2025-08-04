@@ -238,7 +238,7 @@ Matthew Grainger
 <section id="effect-size" class="slide level2">
 <h2>Effect size</h2>
 <ul>
-<li><strong>Effect size</strong> – <em>“A standardized way to compare results (e.g., log response ratio).”</em></li>
+<li><strong>Effect size</strong> – <em>“A standardised way to compare results (e.g., log response ratio).”</em></li>
 </ul>
 <p><a href="https://matthewbjane.quarto.pub/Guide-to-Effect-Sizes-and-Confidence-Intervals.pdf" title="Detailed overview of different effect sizes">Effect sizes</a> are key to synthesising study results in meta-analysis, as they provide a standardised way of comparing findings across studies. Common effect sizes include the standardised mean difference (Hedges’ g in ecology), correlation coefficient, and log-transformed response ratio (lnRR).</p>
 </section>
@@ -408,11 +408,11 @@ Matthew Grainger
 <h2></h2>
 <table class="caption-top">
 <colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
+<col style="width: 25%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 22%">
+<col style="width: 17%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -591,8 +591,8 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <p><code>In this meta-analysis, we found high heterogeneity (I² = 86%) among studies. This suggests that true effect sizes vary meaningfully across ecological contexts—perhaps due to different species, ecosystems, or study designs.The estimated average effect was small and not statistically significant, but given the variation across studies, this average may not be meaningful on its own.</code></p>
 </section></section>
 <section>
-<section id="from-forest-plots-to-orchard-plots-visualizing-meta-analysis-results" class="title-slide slide level1 center">
-<h1>🌳 From Forest Plots to Orchard Plots 🍊: Visualizing Meta-Analysis Results</h1>
+<section id="from-forest-plots-to-orchard-plots-visualising-meta-analysis-results" class="title-slide slide level1 center">
+<h1>🌳 From Forest Plots to Orchard Plots 🍊: Visualising Meta-Analysis Results</h1>
 
 </section>
 <section id="forest-plots-the-classic-view" class="slide level2">
@@ -635,10 +635,10 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <li>Sometimes studies report <strong>regression coefficients</strong> instead of group comparisons.</li>
 <li>These can be used directly as effect sizes if:
 <ul>
-<li>The predictor is consistent across studies (e.g., standardized)</li>
+<li>The predictor is consistent across studies (e.g., standardised)</li>
 <li>The outcome is continuous</li>
 </ul></li>
-<li>Often extracted as <strong>raw slopes</strong>, <strong>standardized</strong> <span class="math inline">\(\beta\)</span>, or <strong>log-odds</strong></li>
+<li>Often extracted as <strong>raw slopes</strong>, <strong>standardised</strong> <span class="math inline">\(\beta\)</span>, or <strong>log-odds</strong></li>
 </ul>
 </section>
 <section id="extracting-regression-coefficients" class="slide level2">
@@ -671,30 +671,36 @@ estimate      se    zval    pval   ci.lb   ci.ub
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
 </div>
+</section>
+<section id="section-13" class="slide level2">
+<h2></h2>
 <ul>
 <li>But must ensure effect direction is interpretable and consistent</li>
 </ul>
 </section>
-<section id="standardizing-predictors-or-outcomes" class="slide level2">
-<h2>Standardizing Predictors or Outcomes</h2>
+<section id="standardising-predictors-or-outcomes" class="slide level2">
+<h2>Standardising Predictors or Outcomes</h2>
 <ul>
 <li><p>If studies use different measurement scales:</p>
 <ul>
 <li><p><strong>Convert to standardised</strong> <span class="math inline">\(\beta\)</span> if possible</p></li>
-<li><p>Or standardize both predictor and outcome before meta-analysis</p></li>
+<li><p>Or standardise both predictor and outcome before meta-analysis</p></li>
 <li><p>Note: This can reduce heterogeneity and improve comparability</p></li>
 </ul></li>
 </ul>
 </section>
-<section id="standardizing-regression-coefficients-beta" class="slide level2">
-<h2>Standardizing Regression Coefficients (<span class="math inline">\(\beta\)</span>)</h2>
+<section id="standardising-regression-coefficients-beta" class="slide level2">
+<h2>Standardising Regression Coefficients (<span class="math inline">\(\beta\)</span>)</h2>
 <ul>
-<li>Standardization makes coefficients comparable across studies</li>
+<li>Standardisation makes coefficients comparable across studies</li>
 <li>Formula (for a simple linear regression):</li>
 </ul>
 <p><span class="math display">\[
-\beta_{\text{standardized}} = \beta \cdot \frac{\text{SD}_X}{\text{SD}_Y}
+\beta_{\text{standardised}} = \beta \cdot \frac{\text{SD}_X}{\text{SD}_Y}
 \]</span></p>
+</section>
+<section id="section-14" class="slide level2">
+<h2></h2>
 <p>Where:</p>
 <ul>
 <li><p>(<span class="math inline">\(\beta\)</span>): unstandardised slope (from paper)</p></li>
@@ -720,7 +726,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
 <p>You can now use beta_std as your yi values in rma() or rma.mv().</p>
 </section>
-<section id="section-13" class="slide level2">
+<section id="section-15" class="slide level2">
 <h2></h2>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -745,10 +751,10 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <ul>
 <li><p>Traditional <strong>funnel plots</strong> assume <strong>independent effect sizes</strong></p></li>
 <li><p>But in multilevel models, effects are nested (e.g., multiple per study)</p></li>
-<li><p>This violates the assumption → misleading asymmetry or overdispersion</p></li>
+<li><p>This violates the assumption - misleading asymmetry or overdispersion</p></li>
 </ul>
 </section>
-<section id="section-14" class="slide level2">
+<section id="section-16" class="slide level2">
 <h2></h2>
 
 <img data-src="Introduction_to_Meta-Analysis_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"><ul>
@@ -805,7 +811,7 @@ F-statistic: 7.116 on 1 and 46 DF,  p-value: 0.01051</code></pre>
 <h2>Recommended literature</h2>
 <p>Sarkis-Onofre, R., Catal�-L�pez, F., Aromataris, E. et al.&nbsp;How to properly use the PRISMA Statement. Syst Rev 10, 117 (2021). https://doi.org/10.1186/s13643-021-01671-z</p>
 <p>Nakagawa, S., Noble, D. W. A., Senior, A. M., &amp; Lagisz, M. (2017). Meta-evaluation of meta-analysis: ten appraisal questions for biologists. BMC Biology, 15(1), 18. https://doi.org/10.1186/s12915-017-0357-7Harrer, M., Cuijpers, P., Furukawa, T. A., &amp; Ebert, D. D. (2021). Doing Meta-Analysis With R: A Hands-On Guide (1st ed.). Chapman &amp; Hall/CRC Press. https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/Nakagawa, S., Lagisz, M., O’Dea, R. E., Pottier, P., Rutkowska, J., Senior, A. M., Yang, Y., &amp; Noble, D. W. A. (2023). orchaRd 2.0: An R package for visualising meta-analyses with orchard plots. Methods in Ecology and Evolution, 14(8), 2003-2010. https://doi.org/10.1111/2041-210x.14152</p>
-<p>Coe, R. (2002). It’s the Effect Size - Stupid. Paper presented at the British Educational Research Association annual conference, Exeter, 12�14 September, 2002 https://f.hubspotusercontent30.net/hubfs/5191137/attachments/ebe/ESguide.pdf</p>
+<p>Coe, R. (2002). It’s the Effect Size - Stupid. Paper presented at the British Educational Research Association annual conference, Exeter, 12-14 September, 2002 https://f.hubspotusercontent30.net/hubfs/5191137/attachments/ebe/ESguide.pdf</p>
 
 </section></section>
     </div>

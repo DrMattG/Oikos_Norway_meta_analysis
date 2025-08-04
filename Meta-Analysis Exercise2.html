@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Meta-Analysis Exercise: Standardizing Regression Coefficients</title>
+<title>Meta-Analysis Exercise: Standardising Regression Coefficients</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -108,7 +108,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Meta-Analysis Exercise: Standardizing Regression Coefficients</h1>
+<h1 class="title">Meta-Analysis Exercise: Standardising Regression Coefficients</h1>
 </div>
 
 
@@ -128,7 +128,7 @@ window.Quarto = {
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
 <p>Each study below estimates the <strong>effect of temperature</strong> on <strong>insect abundance</strong> using a simple linear regression.</p>
-<p>You’ll extract and <strong>standardize the regression coefficients</strong> so they are comparable, then run a meta-analysis using <code>metafor</code>.</p>
+<p>You’ll extract and <strong>standardise the regression coefficients</strong> so they are comparable, then run a meta-analysis using <code>metafor</code>.</p>
 <section id="load-packages" class="level2">
 <h2 class="anchored" data-anchor-id="load-packages">Load packages</h2>
 <div class="cell">
@@ -140,10 +140,10 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="formula-reminder">Formula Reminder</h2>
 <p>To standardise a regression slope β:</p>
 <p><span class="math display">\[
-\beta_{\text{standardized}} = \beta \cdot \frac{\text{SD}_X}{\text{SD}_Y}
+\beta_{\text{standardised}} = \beta \cdot \frac{\text{SD}_X}{\text{SD}_Y}
 \]</span></p>
 <p>And for the standard error:</p>
-<p><span class="math display">\[SE std = SE raw * \frac{\text{SD}_X}{\text{SD}_Y}\]</span>𝑆</p>
+<p><span class="math display">\[SE std = SE raw * \frac{\text{SD}_X}{\text{SD}_Y}\]</span></p>
 <p><em>Study 1</em>: Temperate Forest</p>
 <p>A study in New Hampshire found that insect abundance increased by 2.3 individuals per °C (SE = 0.6). The standard deviation of temperature was 3.8°C, and the SD of abundance was 18.5.</p>
 <p><em>Study 2</em>: Agricultural Field</p>
@@ -180,7 +180,7 @@ window.Quarto = {
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">rma</span>(<span class="at">yi =</span> beta_std, <span class="at">vi =</span> vi_std, <span class="at">data =</span> dat) <span class="co"># change this to the correct model type</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">forest</span>(res, <span class="at">slab =</span> dat<span class="sc">$</span>study,</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>       <span class="at">xlab =</span> <span class="st">"Standardized Effect (SD change in abundance per SD temp)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>       <span class="at">xlab =</span> <span class="st">"Standardised Effect (SD change in abundance per SD temp)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="interpretation" class="level2">
